@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 const number_outside = 1;
 const str_outside = "outside";
 
-export default class RenderEx extends Component {
+export default class ExampleRender extends Component {
 
     render(){
         //inside 

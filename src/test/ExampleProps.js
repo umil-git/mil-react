@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class PropsTest extends Component {
+export default class ExampleProps extends Component {
     
     render(){
         return(
@@ -11,6 +11,7 @@ export default class PropsTest extends Component {
         );
     }
 }
-PropsTest.defaultProps = {
+
+ExampleProps.defaultProps = {
     what_2: 'no'
 }
