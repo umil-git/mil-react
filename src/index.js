@@ -4,17 +4,17 @@ import './index.css';
 //import App from './App';
 
 
-//import RenderEx from './test/RenderEx';
-import PropsTest from './test/PropsTest';
-import CountTest from './test/CountTest'
+import ExampleRender from './test/RenderEx';
+import ExampleProps from './test/ExampleProps';
+import ExampleCount from './test/ExampleCount'
 
 import * as serviceWorker from './serviceWorker';
 //ReactDOM.render(<App />, document.getElementById('root'));
 
 
-//ReactDOM.render(<RenderEx />, document.getElementById('RenderEx'));
-ReactDOM.render(<PropsTest what="what???!"/>, document.getElementById("PropsTest"));
-ReactDOM.render(<CountTest />, document.getElementById("CountTest"));
+ReactDOM.render(<ExampleRender />, document.getElementById('ExampleRender'));
+ReactDOM.render(<ExampleProps what="what???!"/>, document.getElementById("ExampleProps"));
+ReactDOM.render(<ExampleCount />, document.getElementById("ExampleCount"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
