@@ -9,7 +9,7 @@ export default class ExampleState2 extends Component{
             number : 1,
             foo: {
                 foobar : "hello",
-                foobar2 : 3
+                foobar2 : 4
             }
         }
         /*
@@ -34,13 +34,25 @@ export default class ExampleState2 extends Component{
 
     setFoobar = () => {
         this.setState({
-            ...this.state.number,
             foo: {
                 ...this.state.foo,
                 foobar : "hello!"
             }
         });
     }
+
+    setFoobar2 = () => {
+        this.setState( 
+            (state) => ({
+                foo: {
+                    ...state.foo,
+                    foobar2 : state.foo.foobar2 + 1
+                }
+            })
+        );
+    }
+
+    
 
     /*
     setNumber(){
@@ -68,7 +80,8 @@ export default class ExampleState2 extends Component{
                 <div> { this.state.foo.foobar } </div>
                 <div> { this.state.foo.foobar2 } </div>
                 <button onClick={this.setNumber} >Number</button>
-                <button onClick={this.setFoobar} >Foo</button>
+                <button onClick={this.setFoobar} >Foobar</button>
+                <button onClick={this.setFoobar2} >Foobar2</button>
             </div>
         );
     }

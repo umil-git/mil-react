@@ -8,6 +8,7 @@ import ExampleRender from './test/ExampleRender';
 import ExampleProps from './test/ExampleProps';
 import ExampleState from './test/ExampleState'
 import ExampleState2 from './test/ExampleState2';
+import ExampleForm from './test/ExampleForm';
 
 import * as serviceWorker from './serviceWorker';
 //ReactDOM.render(<App />, document.getElementById('root'));
@@ -16,6 +17,7 @@ ReactDOM.render(<ExampleRender />, document.getElementById('ExampleRender'));
 ReactDOM.render(<ExampleProps what="what???!"/>, document.getElementById("ExampleProps"));
 ReactDOM.render(<ExampleState />, document.getElementById("ExampleState"));
 ReactDOM.render(<ExampleState2 />, document.getElementById("ExampleState2"));
+ReactDOM.render(<ExampleForm />, document.getElementById("ExampleForm"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
